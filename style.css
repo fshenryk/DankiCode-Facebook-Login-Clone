@@ -136,3 +136,15 @@ form.criar-conta input[type=submit]{
     max-width: 200px;
     font-size: 19px;
 }
+
+form .w100 h2{
+    margin-top: 10px;
+    color: #1d2129;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+form select.nascimento{
+    float: left;
+    margin-top: 5px;
+}
