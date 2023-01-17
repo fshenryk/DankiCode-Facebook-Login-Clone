@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Aplicar depois as meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Facebook</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
     <link rel="stylesheet" href="style.css">
@@ -18,14 +18,14 @@
             </div><!-- logo -->
             <form method="post" class="form-login">
                 <div class="form-element">
-                    <p>E-amil ou telefone:</p>
+                    <p>E-mail ou telefone:</p>
                     <input type="email"/>
                 </div><!-- form-element -->
                 <div class="form-element">
                     <p>Senha:</p>
                     <input type="password"/>
                 </div><!-- form-element -->
-                <div class="form-element">
+                <div class="form-element" id="submit">
                     <input type="submit" name="acao" value="Enviar">
                 </div>
             </form><!-- form-login -->
@@ -52,27 +52,41 @@
                     </div><!-- w50 -->
 
                     <div class="w100">
-                        <input placeholder=""Email type="email">
+                        <input placeholder="Email" type="email">
                     </div><!-- w100 -->
 
                     <div class="w100">
                         <input placeholder="Senha" type="password">
                     </div><!-- w100 -->
 
-                    <div class="w100">
+                    <div class="w100" id="dates">
                         <h2>Data de Nascimento:</h2>
-                        <select name="nascimento-dia" class="nascimento">
-                        </select>
-                        <select name="nascimento-mes" class="nascimento">
-                        </select>
-                        <select name="nascimento-ano" class="nascimento">
-                        </select>
-                        <div class="clear"></div>
+                        <div class="box">
+                            <select name="nascimento-dia" class="nascimento">
+                            </select>
+                            <select name="nascimento-mes" class="nascimento">
+                            </select>
+                            <select name="nascimento-ano" class="nascimento">
+                            </select>
+                            <div class="clear"></div>
+                        </div><!-- box -->
                     </div><!-- w100 -->
 
                     <div class="w100">
-                        <input type="submit" name="acao" value="Cadastre-se">
+                        <div class="input-radio">
+                            <input type="radio" name="sexo" value="feminino">
+                            <h2>Feminino</h2>
+                        </div><!-- input-radio -->
+                        <div class="input-radio">
+                            <input type="radio" name="sexo" value="masculino">
+                            <h2>Masculino</h2>
+                        </div><!-- input-radio -->
+                        <div class="clear"></div>
                     </div>
+                        
+                    <div class="w100">
+                        <input type="submit" name="acao" value="Cadastre-se">
+                    </div><!-- w100 -->
 
                     <div class="clear"></div>
                 </form><!-- criar-conta -->
@@ -81,5 +95,50 @@
             <div class="clear"></div>
         </div><!-- center -->
     </section><!-- main -->
+
+    <section class="linguas">
+        <div class="center">
+            <a class="selected-lingua" href="">Português (BR)</a>
+            <a href="">Português (BR)</a>
+            <a href="">Português (BR)</a>
+            <a href="">Português (BR)</a>
+            <a href="">Português (BR)</a>
+            <a href="">Português (BR)</a>
+            <a href="">Português (BR)</a>
+            <a href="">Português (BR)</a>
+        </div><!-- center -->
+        <div class="bottom">
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <a href="">Lorem Ipsum</a>
+            <p>&copy; facebook 2018</p>
+        </div><!-- bottom -->
+
+
+    </section><!-- linguas -->
 </body>
 </html>

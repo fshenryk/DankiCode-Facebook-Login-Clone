@@ -1,5 +1,4 @@
 /*
-
 //////////////////////////////////////---------------------------------
 
 chamar todas quando a pagina carregar
@@ -85,7 +84,8 @@ function transformOptios(){
 }
 
 /////////////////////////////////////////////////////------------------------------
-*/
+
+// Uma função fazendo tudo
 
 window.onload = function createOptions(){
     dateLoop(1, 31, 0)
@@ -94,8 +94,8 @@ window.onload = function createOptions(){
 }
 
 function dateLoop(i, fim, indexFonte){
-    var classeNascimento = document.getElementsByClassName("nascimento") 
-    var stringMonths = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 
+    classeNascimento = document.getElementsByClassName("nascimento") 
+    stringMonths = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 
     'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
     
     for( i ; i <= fim; i++ ){
@@ -105,5 +105,41 @@ function dateLoop(i, fim, indexFonte){
             value = stringMonths[i]
         }
         classeNascimento[indexFonte].innerHTML += `<option value="${value}">${value}</option>`;
+    }
+}
+
+///////////////////////////////////////////////----------------------
+*/
+
+// Uma função pra cada
+
+window.onload = function createOptions(){
+    toLoopOptiosDays()
+    toLoopOptiosMonths()
+    toLoopOptiosYears()
+}
+
+
+function toLoopOptiosDays(){
+nascimentoDia = document.getElementsByName('nascimento-dia')[0]   
+    for(i = 1; i <= 31 ; i++ ){
+        nascimentoDia.innerHTML += `<option value="${i}">${i}</option>`
+    }
+}
+
+function toLoopOptiosMonths(){
+    nascimentoMes = document.getElementsByName('nascimento-mes')[0] 
+    stringMonths = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 
+    'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
+    
+    for(i = 0; i <= 11; i++){
+        nascimentoMes.innerHTML += `<option value="${stringMonths[i]}">${stringMonths[i]}</option>`
+    }
+}
+
+function toLoopOptiosYears(){
+    nascimentoAno = document.getElementsByName('nascimento-ano')[0]   
+    for(i = 1913; i <= 2023 ; i++ ){
+        nascimentoAno.innerHTML += `<option value="${i}">${i}</option>`
     }
 }
